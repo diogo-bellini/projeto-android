@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/* 
+VARIAVEIS EM CSS
+(FACILITA PARA MUDAR CORES E FONTES DEPOIS)
+
+:root{
+    --nomeDaVariavel: conteudo;
+}
+
+body{
+    background-color: var(--nomeDaVariavel);
+}
+*/
+@font-face {
+    font-family: minhaFonte;
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+}
+/* GERAIS */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EBEACA;
+    margin: 0px;
+}
+
+p{
+    text-indent: 25px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+span{
+    font-weight: bold;
+    color: #185333;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* HEADER */
+header{
+    background-image: linear-gradient(to bottom, #3CD782, #185333);
+    color: white;
+    padding-bottom: 5px;
+    box-shadow: 0px 3px 6px 0px #0000005e;
+}
+
+h1{
+    font-family: 'Academy Engraved LET';
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 35px;
+    margin: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.53);
+}
+
+h2{
+    font-family: 'Academy Engraved LET';
+    font-weight: lighter;
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.53);
+    max-width: 330px; /* Transforma em bloco */
+    margin: auto; /* Centraliza blocos */
+}
+
+nav > a{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    transition-duration: 0.5s; /* OPICIONAL */
+}
+
+nav > a:hover{
+    color: #185333;
+    background-color: #3cd78257;
+    border-radius: 5px;
+}
+
+/* MAIN */
+main{
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    min-width: 450px;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.235);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+main p > a{
+    text-decoration: none;
+    color: #185333;
+    font-weight: bold;
+    background-color: #84e1ac6f;
+    padding: 2px;
+}
+
+main p > a::after{
+    content: "🔗";
+    
+}
+
+h3, h4{
+    font-family: minhaFonte;
+    color: #185333;    
+}
+
+h3{
+    margin: 0px;
+    font-size: 25px;
+}
+
+h4{
+    background-image: linear-gradient(to right, #3cd78257, transparent);
+    padding-left: 5px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+img#ultima-img{
+    max-width: 300px;
+
+}
+
+section#video{
+    background-color: #185333;
+    margin: 0px -10px;
+    padding: 20px;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    max-width: 560px;
+    width: 100%;
+}
+
+section#extra{
+    margin-top: 20px;
+    background-color: #84E1AD;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+}
+
+h5{
+    margin: 0px;
+    background-color: #3CD782;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    font-size: 17px;
+    color: white;
+}
+
+section#extra > p{
+    padding: 5px;
+    margin: 10px;
+}
+
+section#extra > ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "✓ ";
+}
+
+section#extra > p#ultimo-p-extra{
+    padding-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #185333;
+    text-align: center;
+    font-size: 0.8em;
+    color: white;
+}
+
+footer > p{
+    margin: 0px;
+    text-align: center;
+}
